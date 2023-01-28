@@ -1,0 +1,66 @@
+.nextController {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  .continueBtn {
+    width: 390px;
+    margin-top: 27px;
+  }
+  .dots {
+    div:hover {
+      cursor: pointer;
+    }
+    .dot {
+      margin-right: 11px;
+      display: inline-block;
+      border-radius: 100%;
+      width: 9px;
+      height: 9px;
+      border: 1px solid #00b2ff;
+      box-sizing: border-box;
+      &--active {
+        background-color: #00b2ff;
+      }
+    }
+  }
+
+  .enter_box {
+    p {
+      margin-bottom: 0px;
+      font-family: 'Uni Neue Bold';
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 1.5px;
+      color: #00b2ff;
+      text-transform: uppercase;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.logoSmall {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}
+
+.bottom__text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  h6 {
+    -webkit-app-region: no-drag;
+    font-size: 1rem;
+    font-family: 'Uni Neue Regular';
+    color: white;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+  }
+}

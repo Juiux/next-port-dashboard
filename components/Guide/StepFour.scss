@@ -1,0 +1,94 @@
+.stepfour {
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+
+  > div:first-child {
+    width: 70%;
+    @media screen and (max-width: 1439px) and (min-width: 1080px) {
+      width: 85%;
+    }
+  }
+
+  .title {
+    font-size: 38px;
+    font-family: 'Uni Neue Regular';
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h6 {
+    font-family: 'Uni Neue Book';
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.75;
+    color: #c2edff;
+  }
+  &__cardContianer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    position: relative;
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../assets/images/dot-bg.svg');
+      background-repeat: repeat-x;
+      background-position: 50%;
+    }
+  }
+  &__card {
+    width: 275px;
+    height: 143px;
+    border: 1px solid rgba(#ffffff, 0.05);
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    &-ball {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: linear-gradient(180deg, #00d1ff 0%, #0085ff 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Uni Neue Bold';
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      color: #000c12;
+    }
+    &-header {
+      background-color: #000e15;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('../../assets/images/comets.svg');
+      height: 72px;
+      border-bottom: 1px solid rgba(#ffffff, 0.05);
+    }
+    &-footer {
+      height: 71px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-size: 12px;
+        color: #00b2ff;
+        font-family: 'Uni Neue Bold';
+        line-height: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        text-align: center;
+      }
+    }
+  }
+}
